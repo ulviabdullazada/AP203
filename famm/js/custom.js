@@ -53,7 +53,6 @@ function addBasket(elem) {
     checkBasket();
     let basket = JSON.parse(localStorage.getItem("basket"));
     let basketItem = getProduct(elem)
-    console.log();
     if (basket.find(b=>b.id == basketItem.id) == undefined) {
         basket.push(basketItem)
     }
